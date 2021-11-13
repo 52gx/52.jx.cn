@@ -172,7 +172,7 @@ header h1 {
 	height: 80px;
 	line-height: 80px;
 	color: transparent;
-	background: url(../images/52.svg) 50% 50% no-repeat;
+	background: url(../assets/images/52.svg) 50% 50% no-repeat;
 	background-size: auto 60px
 }
 
@@ -201,7 +201,7 @@ header nav a[href*="promotion.aliyun.com"]:after {
 	top: -5px;
 	width: 40px;
 	height: 40px;
-	background: url(../images/zhujike.svg) no-repeat;
+	background: url(../assets/images/zhujike.svg) no-repeat;
 	background-size: 40px 40px
 }
 
@@ -312,7 +312,7 @@ header nav a.login-link:hover {
 .step-1 h2 .line-1 {
 	width: 540px;
 	height: 115px;
-	background: url(../images/line-1.png) 50% 50% no-repeat;
+	background: url(../assets/images/line-1.png) 50% 50% no-repeat;
 	background-size: cover;
 	top: 0;
 	left: -30px
@@ -324,7 +324,7 @@ header nav a.login-link:hover {
 	left: 233px;
 	width: 200px;
 	height: 110px;
-	background: url(../images/moji-1.png) 50% 50% no-repeat;
+	background: url(../assets/images/moji-1.png) 50% 50% no-repeat;
 	background-size: cover;
 	-webkit-transform: translateZ(50px);
 	transform: translateZ(50px)
@@ -333,7 +333,7 @@ header nav a.login-link:hover {
 .step-1 h2 .line-2 {
 	width: 455px;
 	height: 85px;
-	background: url(../images/line-2.png) 50% 50% no-repeat;
+	background: url(../assets/images/line-2.png) 50% 50% no-repeat;
 	background-size: cover;
 	top: 126px;
 	left: 100px
@@ -380,7 +380,7 @@ header nav a.login-link:hover {
 .step-1 .bg {
 	top: 0;
 	margin-left: -500px;
-	background: url(../images/pcb.png) 50% 50% no-repeat;
+	background: url(../assets/images/pcb.png) 50% 50% no-repeat;
 	width: 1128px;
 	height: 821px;
 	-webkit-transform: translateZ(-300px) scale(1.2);
@@ -406,7 +406,7 @@ header nav a.login-link:hover {
 	display: block;
 	height: 785px;
 	width: 500px;
-	background: url(../images/shell.png) 50% 50% no-repeat;
+	background: url(../assets/images/shell.png) 50% 50% no-repeat;
 	background-size: cover;
 	-webkit-transform: translateZ(50px);
 	transform: translateZ(50px)
@@ -418,7 +418,7 @@ header nav a.login-link:hover {
 	left: 0;
 	height: 785px;
 	width: 500px;
-	background: url(../images/shell-shadow.png) 50% 50% no-repeat;
+	background: url(../assets/images/shell-shadow.png) 50% 50% no-repeat;
 	background-size: cover;
 	opacity: .3;
 	-webkit-transform: translateZ(1px);
@@ -432,7 +432,7 @@ header nav a.login-link:hover {
 	width: 470px;
 	height: 470px;
 	margin-left: -235px;
-	background: url(../images/light@1x.png) 50% 50% no-repeat;
+	background: url(../assets/images/light@1x.png) 50% 50% no-repeat;
 	background-size: cover;
 	-webkit-transform: translateZ(820px);
 	transform: translateZ(820px)
@@ -445,7 +445,7 @@ header nav a.login-link:hover {
 	margin-left: -2000px;
 	width: 4000px;
 	height: 1360px;
-	background: url(../images/step-1.svg) 50% 50% no-repeat;
+	background: url(../assets/images/step-1.svg) 50% 50% no-repeat;
 	background-size: cover
 }
 
@@ -620,19 +620,19 @@ header nav a.login-link:hover {
 }
 
 .step-2 ul li.feature-1 .icon i {
-	background-image: url(../images/icon/1.svg)
+	background-image: url(../assets/images/icon/1.svg)
 }
 
 .step-2 ul li.feature-2 .icon i {
-	background-image: url(../images/icon/2.svg)
+	background-image: url(../assets/images/icon/2.svg)
 }
 
 .step-2 ul li.feature-3 .icon i {
-	background-image: url(../images/icon/3.svg)
+	background-image: url(../assets/images/icon/3.svg)
 }
 
 .step-2 ul li.feature-4 .icon i {
-	background-image: url(../images/icon/4.svg)
+	background-image: url(../assets/images/icon/4.svg)
 }
 
 .step-2 ul li.feature-4 .icon big {
@@ -640,11 +640,11 @@ header nav a.login-link:hover {
 }
 
 .step-2 ul li.feature-5 .icon i {
-	background-image: url(../images/icon/5.svg)
+	background-image: url(../assets/images/icon/5.svg)
 }
 
 .step-2 ul li.feature-6 .icon i {
-	background-image: url(../images/icon/6.svg)
+	background-image: url(../assets/images/icon/6.svg)
 }
 
 .step-2 .after {
@@ -831,7 +831,7 @@ html[step="3"] .step-3 {
 }
 
 .step-4 {
-	background: url(../images/step-1.svg) top center no-repeat #2f7ddb;
+	background: url(../assets/images/step-1.svg) top center no-repeat #2f7ddb;
 	background-size: 4000px 1360px;
 	padding-top: 500px
 }
@@ -847,7 +847,7 @@ html[step="3"] .step-3 {
 	margin-left: 100px;
 	height: 580px;
 	width: 590px;
-	background: url(../images/shell-2.png) 50% 50% no-repeat;
+	background: url(../assets/images/shell-2.png) 50% 50% no-repeat;
 	background-size: cover;
 	-webkit-transition: -webkit-transform .3s ease,opacity .3s ease;
 	transition: transform .3s ease,opacity .3s ease;
@@ -871,7 +871,7 @@ html[step="3"] .step-3 {
 	display: inline-block;
 	width: 160px;
 	height: 160px;
-	background: url(../images/icon/7.svg) 50% 50% no-repeat;
+	background: url(../assets/images/icon/7.svg) 50% 50% no-repeat;
 	background-size: 160px 160px;
 	margin-bottom: 1em
 }
@@ -927,7 +927,7 @@ html[step="4"] .step-4 .shell-2 {
 }
 
 footer {
-	background: url(../images/step-2.svg) top center no-repeat #2f7ddb;
+	background: url(../assets/images/step-2.svg) top center no-repeat #2f7ddb;
 	background-size: 4000px 693px;
 	padding-top: 450px;
 	color: #FFF;
