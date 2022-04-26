@@ -25,10 +25,10 @@
     </style>
 </head>
 
-<body>
+<body oncontextmenu = "return false" >
     <div id="player"></div>
     <script type="text/javascript">
-	    var myjx="https://www.newsaas.cn/jx/?url=";
+	    var myjx="https://52.jx.cn/jx.html?url=";
         function _GET(name, isurl) {
             isurl = isurl || false;
 		    var word = "(^|&)" + name + "=([^&]*)(&|$)";
@@ -46,44 +46,61 @@
         document.getElementById('player').innerHTML = '<iframe name="zzapi" id="zzapi" src="' + myjx+ encodeURI(src) + '" scrolling="0" frameborder="0" width="100%" height="100%" allowfullscreen="allowfullscreen"  mozallowfullscreen="mozallowfullscreen"  msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>';
         }else{
 
-            document.getElementById('player').innerHTML='<iframe name="zzapi" id="zzapi" src="https://www.newsaas.cn/music/" scrolling="0" frameborder="0" width="100%" height="100%" allowfullscreen="allowfullscreen"  mozallowfullscreen="mozallowfullscreen"  msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>';  
+            document.getElementById('player').innerHTML='<iframe name="zzapi" id="zzapi" src="https://1000.1000.run/music/" scrolling="0" frameborder="0" width="100%" height="100%" allowfullscreen="allowfullscreen"  mozallowfullscreen="mozallowfullscreen"  msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>';  
         }
     </script>
 </body>
 <!--禁止审查代码start-->
-<script type="text/javascript">
-		//判断F12审查元素
-function fuckyou() {
-	window.close(); //关闭当前窗口(防抽)
-	window.location = "about:blank"; //将当前窗口跳转置空白页
-}
+<script>
+// 返回桌面的时候显示
+((function() {
+		var callbacks = [],
+			timeLimit = 50,
+			open = false;
+		setInterval(loop, 1);
+		return {
+			addListener: function(fn) {
+				callbacks.push(fn);
+			},
+			cancleListenr: function(fn) {
+				callbacks = callbacks.filter(function(v) {
+					return v !== fn;
+				});
+			}
+		}
 
-function ck() {
-	console.profile();
-	console.profileEnd();
-	//我们判断一下profiles里面有没有东西，如果有，肯定有人按F12了，没错！！
-	if(console.clear) {
-		console.clear()
-	};
-	if(typeof console.profiles == "object") {
-		return console.profiles.length > 0;
-	}
-}
+		function loop() {
+			var startTime = new Date();
+			debugger;
+			if (new Date() - startTime > timeLimit) {
+				if (!open) {
+					callbacks.forEach(function(fn) {
+						fn.call(null);
+					});
+				}
+				open = true;
+				window.stop();
+				alert('温馨提醒：\n小样！还想扒我的站？\n自己老实一点！');
+				document.body.innerHTML = "";
+			} else {
+				open = false;
+			}
+		}
+	})()).addListener(function() {
+		window.location.reload();
+	});
 
-function hehe() {
-	if((window.console && (console.firebug || console.table && /firebug/i.test(console.table()))) || (typeof opera == 'object' && typeof opera.postError == 'function' && console.profile.length > 0)) {
-		fuckyou();
+// js键盘监听事件-监听键盘F12(123)-触发文件为空
+$(document).keydown(function(event) {
+	if (event.keyCode == 123) {
+		alert('温馨提醒：\n小伙子！你想干嘛？又想扒我站？');
+		document.body.innerHTML = "";
 	}
-	if(typeof console.profiles == "object" && console.profiles.length > 0) {
-		fuckyou();
-	}
-}
-hehe();
-window.onresize = function() {
-	if((window.outerHeight - window.innerHeight) > 200)
-		//判断当前窗口内页高度和窗口高度，如果差值大于200，那么呵呵
-		fuckyou();
-}
+});
+
+//显示版权
+console.log("\n %c 52.js.cn %c https://52.jx.cn/ \n\n",
+			"color: #fadfa3; background: #2f55d4; padding:5px 0;", "background: #fadfa3; padding: 5px 0;")
 </script>
 <!--禁止审查代码end-->
 <script>
